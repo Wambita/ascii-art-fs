@@ -10,7 +10,7 @@ import (
 func main() {
 	var filePath string
 	if len(os.Args) == 1 || len(os.Args) > 3 {
-		fmt.Println("Usage: go run . [STRING] [BANNER]\n\nEX: go run . \"something\" <BANNER>")
+		fmt.Println("Usage: go run . [STRING] [BANNER]\n\nEX: go run . \"something\" standard")
 	}
 
 	if len(os.Args) == 2 {
@@ -21,14 +21,14 @@ func main() {
 		flag := os.Args[2]
 		filePath = "standard.txt"
 		switch flag {
-		case "shadow", "sh", "Sh", "SHADOW":
+		case "shadow":
 			filePath = "shadow.txt"
-		case "thinkertoy", "t", "T", "THINKERTOY":
+		case "thinkertoy":
 			filePath = "thinkertoy.txt"
-		case "standard", "Standard", "S", "s", "STANDARD":
+		case "standard":
 			filePath = "standard.txt"
 		default:
-			fmt.Println("Usage: go run . [STRING] [BANNER]\n\nEX: go run . \"something\" <BANNER>")
+			fmt.Println("Usage: go run . [STRING] [BANNER]\n\nEX: go run . \"something\" standard")
 			return
 
 		}
