@@ -1,9 +1,9 @@
-## ASCII-Art
+## ASCII-Art-fs
 
 
 ### Overview
 
-The ASCII-Art program converts input text into a graphic representation using ASCII characters. It supports various fonts and special characters, including spaces, newlines, and punctuation. This tool is ideal for creating stylized text for use in command line applications, documentation, or simply for artistic purposes.
+The ASCII-Art program converts input text into a graphic representation using ASCII characters into the font/banner specified. It supports various fonts and special characters, including spaces, newlines, and punctuation. This tool is ideal for creating stylized text for use in command line applications, documentation, or simply for artistic purposes.
 
 ### Features
 
@@ -53,8 +53,8 @@ go run . "Hello\n\nThere" | cat -e
 - `shadow`: Use shadow.txt for ASCII art.
 - `thinkertoy`: Use thinkertoy.txt for ASCII art.
 ```bash
-go run . "Hello" -shadow
-go run . "Hello" -thinkertoy
+go run . "Hello" shadow
+go run . "Hello" thinkertoy
 
 ```
 ### Installation
@@ -96,7 +96,7 @@ $
 
 ``` bash
 
-go run . "Hello" -shadow  | cat -e
+go run . "Hello" shadow  | cat -e
 ```
 Output :
 ```
@@ -110,7 +110,7 @@ _|    _|   _|_|_| _| _|   _|_|   $
                                  $
 ```
 ```bash
-go run . "hello" -thinkertoy | cat -e
+go run . "hello" thinkertoy | cat -e
 ```
 ```
                  $
